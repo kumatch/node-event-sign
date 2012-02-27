@@ -1,0 +1,3 @@
+#!/bin/bash
+
+mocha $(find . -name "*.test.js") -r should --reporter spec

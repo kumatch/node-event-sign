@@ -1,0 +1,14 @@
+{
+    "name": "event-spec"
+  , "version": "0.1.0"
+  , "description": "Defines event specification and creates proxy."
+  , "keywords": ["event"]
+  , "author": "Yosuke Kumakura <kumatch@gmail.com>"
+  , "repository": { "type": "git", "url": "git://github.com/kumatch/node-event-spec.git" }
+  , "main": "./lib/index.js"
+  , "engines": { "node": ">= 0.4.0" }
+  , "devDependencies": {
+    "mocha": ">=0.13.0",
+    "should": "*"
+  }
+}
