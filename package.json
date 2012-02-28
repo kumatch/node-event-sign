@@ -1,10 +1,10 @@
 {
-    "name": "event-spec"
+    "name": "event-transceiver"
   , "version": "0.1.0"
-  , "description": "Defines event specification and creates proxy."
+  , "description": "Defines event specification and creates event transmitter/receiver wrapper."
   , "keywords": ["event"]
   , "author": "Yosuke Kumakura <kumatch@gmail.com>"
-  , "repository": { "type": "git", "url": "git://github.com/kumatch/node-event-spec.git" }
+  , "repository": { "type": "git", "url": "git://github.com/kumatch/node-event-transceiver.git" }
   , "main": "./lib/index.js"
   , "engines": { "node": ">= 0.4.0" }
   , "devDependencies": {

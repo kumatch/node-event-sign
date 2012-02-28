@@ -1,5 +1,5 @@
-var EventSpec = require('../../');
-var CounterEvent = EventSpec.define(['increment', 'decrement', 'error']);
+var EventTransceiver = require('../../');
+var CounterEvent = EventTransceiver.define(['increment', 'decrement', 'error']);
 
 exports = module.exports = Counter;
 
@@ -13,17 +13,17 @@ Counter.prototype.count = function (number) {
 
     process.nextTick(function () {
         if (typeof number !== 'number') {
-            event.publisher.error(Error('argument is not number'));
+            event.transmitter.error(Error('argument is not number'));
         }
 
         self._current += number;
 
         if (number > 0) {
-            event.publisher.increment(self._current);
+            event.transmitter.increment(self._current);
         } else if (number < 0) {
-            event.publisher.decrement(self._current);
+            event.transmitter.decrement(self._current);
         }
     });
 
-    return event.subscriber;
+    return event.receiver;
 };

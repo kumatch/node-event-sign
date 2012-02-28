@@ -1,6 +1,6 @@
 var Counter = require('./counter');
 
-describe('node-spec usage - Counter', function() {
+describe('Usage - counter', function() {
 
     it('count 1 then emits increment event.', function(done) {
         var counter = new Counter();
