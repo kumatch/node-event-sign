@@ -100,3 +100,8 @@ And same this.
 
     emitter.on('done', function(some, parameter) { ... });
 
+
+License
+=========
+
+event-transceiver is licensed under the [MIT license](http://www.opensource.org/licenses/mit-license.php).
