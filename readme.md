@@ -20,17 +20,17 @@ Counter.prototype.count = function (number) {
 
     process.nextTick(function () {
         if (typeof number !== 'number') {
-            // equals event.emit('error', ..)
+            // equal emitter.emit('error', ..)
             event.transmitter.error(Error('argument is not number'));
         }
 
         self._current += number;
 
         if (number > 0) {
-            // equals event.emit('increment', ..)
+            // equal emitter.emit('increment', ..)
             event.transmitter.increment(self._current);
         } else if (number < 0) {
-            // equals event.emit('decrement', ..)
+            // equal emitter.emit('decrement', ..)
             event.transmitter.decrement(self._current);
         }
     });
@@ -41,7 +41,7 @@ Counter.prototype.count = function (number) {
 
 var counter = new Counter();
 
-counter.count(10)   // return event receiver, and add listners.
+counter.count(10)   // gets event receiver, and add listners.
        .error( function (err) {
            throw err;
        })

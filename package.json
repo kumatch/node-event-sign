@@ -1,7 +1,7 @@
 {
     "name": "event-transceiver"
-  , "version": "0.1.0"
-  , "description": "Defines event specification and creates event transmitter/receiver wrapper."
+  , "version": "0.1.1"
+  , "description": "Defines event specification and creates event transmit/receive wrapper."
   , "keywords": ["event"]
   , "author": "Yosuke Kumakura <kumatch@gmail.com>"
   , "repository": { "type": "git", "url": "git://github.com/kumatch/node-event-transceiver.git" }
