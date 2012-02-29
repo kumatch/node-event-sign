@@ -46,4 +46,21 @@ describe('Define events', function() {
             });
         });
     });
+
+    describe('define event, and add listner', function() {
+        var Event = EventTransceiver.define(['foo']);
+        var e = new Event();
+
+        var result = 'OK';
+
+        e.receiver.foo( function (arg, callback) {
+            arg.should.equal(result);
+            callback();
+        });
+
+        it('emit by event functions copy', function(done) {
+            var emit_event = e.transmitter.foo;
+            emit_event(result, done);
+        });
+    });
 });

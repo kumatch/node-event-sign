@@ -1,6 +1,6 @@
 {
     "name": "event-transceiver"
-  , "version": "0.1.1"
+  , "version": "0.2.0"
   , "description": "Defines event specification and creates event transmit/receive wrapper."
   , "keywords": ["event"]
   , "author": "Yosuke Kumakura <kumatch@gmail.com>"
@@ -8,7 +8,7 @@
   , "main": "./lib/index.js"
   , "engines": { "node": ">= 0.4.0" }
   , "devDependencies": {
-    "mocha": ">=0.13.0",
-    "should": "*"
-  }
+        "mocha": ">=0.13.0",
+        "should": "*"
+    }
 }
