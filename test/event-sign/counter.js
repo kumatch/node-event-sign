@@ -1,5 +1,5 @@
-var EventTransceiver = require('../../');
-var CounterEvent = EventTransceiver.define(['increment', 'decrement', 'error']);
+var EventSign = require('../../');
+var CounterEvent = EventSign.define(['increment', 'decrement', 'error']);
 
 exports = module.exports = Counter;
 

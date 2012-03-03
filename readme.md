@@ -3,10 +3,10 @@ Example
 ==========
 
 ```javascript
-var EventTransceiver = require('event-transceiver');
+var EventSign = require('event-sign');
 
 // Define events
-var CounterEvent = EventTransceiver.define(['increment', 'decrement', 'error']);
+var CounterEvent = EventSign.define(['increment', 'decrement', 'error']);
 
 function Counter(current) {
     this._current = current || 0;
@@ -57,7 +57,7 @@ counter.count(10)   // gets event receiver, and add listners.
 Installation
 ==============
 
-    $ npm install event-transceiver
+    $ npm install event-sign
 
 
 
@@ -65,7 +65,7 @@ Installation
 Features
 ==========
 
-EventTransceiver.define( events )
+EventSign.define( events )
 ------------------------------------
 
 Defines events.
@@ -104,4 +104,4 @@ And same this.
 License
 =========
 
-event-transceiver is licensed under the [MIT license](http://www.opensource.org/licenses/mit-license.php).
+event-sign is licensed under the [MIT license](http://www.opensource.org/licenses/mit-license.php).

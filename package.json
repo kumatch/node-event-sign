@@ -1,14 +1,14 @@
 {
-    "name": "event-transceiver"
-  , "version": "0.2.0"
+    "name": "event-sign"
+  , "version": "0.3.0"
   , "description": "Defines event specification and creates event transmit/receive wrapper."
   , "keywords": ["event"]
   , "author": "Yosuke Kumakura <kumatch@gmail.com>"
-  , "repository": { "type": "git", "url": "git://github.com/kumatch/node-event-transceiver.git" }
+  , "repository": { "type": "git", "url": "git://github.com/kumatch/node-event-sign.git" }
   , "main": "./lib/index.js"
   , "engines": { "node": ">= 0.4.0" }
   , "devDependencies": {
-        "mocha": ">=0.13.0",
+        "mocha": "*",
         "should": "*"
     }
 }

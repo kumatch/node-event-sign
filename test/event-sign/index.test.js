@@ -1,8 +1,8 @@
-var EventTransceiver = require('../../');
+var EventSign = require('../../');
 
 describe('Define events', function() {
     describe('a new spec', function() {
-        var Event = EventTransceiver.define(['some']);
+        var Event = EventSign.define(['some']);
         var e = new Event();
 
         it('gets object.', function() {
@@ -19,7 +19,7 @@ describe('Define events', function() {
     });
 
     describe('"foo", "bar" events spec', function() {
-        var Event = EventTransceiver.define(['foo', 'bar']);
+        var Event = EventSign.define(['foo', 'bar']);
         var e = new Event();
 
         describe('then transmitter', function() {
@@ -48,7 +48,7 @@ describe('Define events', function() {
     });
 
     describe('define event, and add listner', function() {
-        var Event = EventTransceiver.define(['foo']);
+        var Event = EventSign.define(['foo']);
         var e = new Event();
 
         var result = 'OK';
