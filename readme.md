@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/kumatch/node-event-sign.png)](http://travis-ci.org/kumatch/node-event-sign)
 
 Example
 ==========
